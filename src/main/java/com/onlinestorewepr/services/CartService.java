@@ -6,9 +6,9 @@ import com.onlinestorewepr.models.Cart;
 public class CartService {
 	private final CartDao cartDao = new CartDao();
 	private Cart cart = new Cart();
-	
-    public void viewCart(int id) {
-    	cart = cartDao.get(id);
+	private int cartId = 1;
+    public void viewCart() {
+    	cart = cartDao.get(cartId);
     	forwardToCart();
     }
     
