@@ -99,4 +99,11 @@ public class User {
       this.name = name;
       this.cart = cart;
    }
+
+   public User(String username,String email,String phone,String address){
+      this.username = username;
+      this.email = email;
+      this.phone = phone;
+      this.address = address;
+   }
 }

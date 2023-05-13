@@ -9,7 +9,9 @@ public class Validator {
     public static boolean validateReview(Review review) { return true; }
     public static boolean validateOrder(Order order) { return true; }
     public static boolean validatePassword(String password) { return true; }
-    public static boolean validateOTP(String OTP) {return true;}
     public static boolean validateProductName(String productName) {return true;}
-
+    public static boolean isValidEmail(String inputEmail){return true;}
+    public static boolean isValidOTP(String inputOTP) {return true;}
+    public static boolean isValidNewPassword(String newPassword, String confirmPassword) {return true;}
+    public static boolean isValidUserInfo(String phone, String email) {return true;}
 }
