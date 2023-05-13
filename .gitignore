@@ -6,3 +6,4 @@ build/
 *.war
 *.ear
 src/main/resources/hibernate.cfg.xml
+/bin/
