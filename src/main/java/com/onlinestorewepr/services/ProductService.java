@@ -16,6 +16,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ProductService {
     private final HttpServletRequest request;
@@ -121,13 +122,48 @@ public class ProductService {
         productDAO.insert(product);
     }
 
-    public void searchProduct() {
+    public List<Product> searchProduct(String productKeyword) {
+        String message = "Invalid input";
+        List<Product> proList = null;
+        proList = getListProByName(productKeyword);
+        return proList;
     }
 
     public List<Product> getListProByName(String name) {
         return Collections.emptyList();
     }
 
-    public void displayProducts() {
+    public void displayProducts(String message, List<Product> searchProductsResultList) throws ServletException, IOException{
+        forwardToSearchResultPage(message,searchProductsResultList);
+    }
+
+    private void forwardToSearchResultPage(String message, List<Product> searchProductsResultList) throws ServletException, IOException {
+        request.setAttribute("products", searchProductsResultList);
+        request.setAttribute("message", message);
+        request.getRequestDispatcher("/user/productSearchResult.jsp").forward(request, response);
+
+    }
+
+    public void searResultList() {
+    }
+
+    public void displayAllProducts() {
+
+    }
+
+    public Product getProductDetailByProId(int proId) {
+        ProductDao productDao = new ProductDao();
+        Product product = new Product();
+        product = productDao.get((proId));
+        return product;
+    }
+
+    public void displayDetail(Product product) throws ServletException, IOException {
+        forwardToProDetailPage(product);
+    }
+
+    private void forwardToProDetailPage(Product product) throws ServletException, IOException {
+        request.setAttribute("products", product);
+        request.getRequestDispatcher("/user/proDetailPage.jsp").forward(request, response);
     }
 }
