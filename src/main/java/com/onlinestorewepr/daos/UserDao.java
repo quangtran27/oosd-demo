@@ -37,4 +37,5 @@ public class UserDao {
    public User findUserByEmail(String email) {
       return null;
    }
+   public void updatePassword(User user, String newPassword){}
 }
