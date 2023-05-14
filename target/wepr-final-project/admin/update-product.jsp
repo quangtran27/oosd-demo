@@ -140,7 +140,7 @@
                     <div class="row mb-3">
                       <label class="col-sm-2 col-form-label" for="size">Size</label>
                       <div class="col-sm-10">
-                        <input required type="text" name ="size" class="form-control" id="size" placeholder="Size" value="${product.size}"/>
+                        <input type="text" name ="size" class="form-control" id="size" placeholder="Size" value="${product.size}"/>
                       </div>
                     </div>
                     <div class="row mb-3">

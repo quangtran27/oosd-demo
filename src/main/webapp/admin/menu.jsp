@@ -28,22 +28,22 @@
          <ul class="menu-sub">
             <li class="menu-item" id="menu-managements-categories">
                <a href="${pageContext.request.contextPath}/admin/category" class="menu-link">
-                  <div data-i18n="Without menu">Categories</div>
+                  <div data-i18n="Without menu">CATEGORIES</div>
                </a>
             </li>
             <li class="menu-item" id="menu-managements-products">
-               <a href="${pageContext.request.contextPath}/admin/product" class="menu-link">
-                  <div data-i18n="Without navbar">Products</div>
+               <a href="${pageContext.request.contextPath}/admin/products" class="menu-link">
+                  <div data-i18n="Without navbar">PRODUCTS</div>
                </a>
             </li>
             <li class="menu-item" id="menu-managements-orders">
                <a href="${pageContext.request.contextPath}/admin/order" class="menu-link">
-                  <div data-i18n="Without navbar">Orders</div>
+                  <div data-i18n="Without navbar">ORDERS</div>
                </a>
             </li>
             <li class="menu-item" id="menu-managements-account" >
                <a href="<%request.getContextPath();%>/admin/account" class="menu-link">
-                  <div data-i18n="Without navbar">Account</div>
+                  <div data-i18n="Without navbar">ACCOUNTS</div>
                </a>
             </li>
          </ul>

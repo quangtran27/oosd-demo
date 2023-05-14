@@ -59,7 +59,7 @@
                   <th style="width: 10%">Brand</th>
                   <th style="width: 5%">Qty</th>
                   <th style="width: 12%">Price</th>
-                  <th style="width: 8%">Discount</th>
+                  <th style="width: 8%">Sale Price</th>
                   <th style="width: 8%">Available</th>
                   <th style="width: 8%"></th>
                   <th style="width: 8%"></th>
@@ -76,7 +76,7 @@
                     <td>${product.brand}</td>
                     <td>${product.quantity}</td>
                     <td>${product.price}</td>
-                    <td>${product.discount}</td>
+                    <td>${product.salePrice}</td>
                     <td>${product.available}</td>
                     <td>
                       <a href="<%request.getContextPath();%>/admin/product/update?id=${product.id}">Change</a>

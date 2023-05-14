@@ -21,14 +21,14 @@
       <property name="hbm2ddl.auto">update</property>
 
       <!-- Entities Mapping-->
-      <mapping class="com.onlinestorewepr.models.Cart" />
-      <mapping class="com.onlinestorewepr.models.CartItem" />
-      <mapping class="com.onlinestorewepr.models.Category" />
-      <mapping class="com.onlinestorewepr.models.Order" />
-      <mapping class="com.onlinestorewepr.models.OrderItem" />
-      <mapping class="com.onlinestorewepr.models.Product" />
-      <mapping class="com.onlinestorewepr.models.Review" />
-      <mapping class="com.onlinestorewepr.models.User" />
+      <mapping class="com.oosd.models.Cart" />
+      <mapping class="com.oosd.models.CartItem" />
+      <mapping class="com.oosd.models.Category" />
+      <mapping class="com.oosd.models.Order" />
+      <mapping class="com.oosd.models.OrderItem" />
+      <mapping class="com.oosd.models.Product" />
+      <mapping class="com.oosd.models.Review" />
+      <mapping class="com.oosd.models.User" />
 
    </session-factory>
 </hibernate-configuration>
