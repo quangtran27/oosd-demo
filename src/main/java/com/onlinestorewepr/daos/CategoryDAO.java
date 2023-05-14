@@ -9,7 +9,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import java.util.Collections;
 import java.util.List;
 
-public class CategoryDao {
+public class CategoryDAO {
    public List<Category> getAll() {
       List<Category> categories = Collections.emptyList();
       try (Session session = HibernateUtil.getSessionFactory().openSession()) {

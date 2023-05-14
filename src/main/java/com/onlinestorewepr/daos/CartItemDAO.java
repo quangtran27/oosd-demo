@@ -2,7 +2,7 @@ package com.onlinestorewepr.daos;
 
 import com.onlinestorewepr.models.CartItem;
 
-public class CartItemDao {
+public class CartItemDAO {
     public CartItem get(int id) {
         return null;
     }

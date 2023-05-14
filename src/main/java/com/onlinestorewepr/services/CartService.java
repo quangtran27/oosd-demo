@@ -1,10 +1,10 @@
 package com.onlinestorewepr.services;
 
-import com.onlinestorewepr.daos.CartDao;
+import com.onlinestorewepr.daos.CartDAO;
 import com.onlinestorewepr.models.Cart;
 
 public class CartService {
-	private final CartDao cartDao = new CartDao();
+	private final CartDAO cartDao = new CartDAO();
 	private Cart cart = new Cart();
 	private int cartId = 1;
     public void viewCart() {

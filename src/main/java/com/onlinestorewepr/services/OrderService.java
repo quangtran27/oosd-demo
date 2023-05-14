@@ -6,8 +6,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.onlinestorewepr.daos.CartItemDao;
-import com.onlinestorewepr.daos.OrderDao;
+import com.onlinestorewepr.daos.CartItemDAO;
+import com.onlinestorewepr.daos.OrderDAO;
 import com.onlinestorewepr.models.Cart;
 import com.onlinestorewepr.models.CartItem;
 import com.onlinestorewepr.models.Order;
@@ -20,13 +20,13 @@ public class OrderService {
 	private final HttpServletResponse response ;
 	private User user = new User();
 	private Cart cart = new Cart();
-	private final CartItemDao cartItemDao = new CartItemDao();
+	private final CartItemDAO cartItemDao = new CartItemDAO();
     public OrderService(HttpServletRequest request, HttpServletResponse response) {
 		super();
 		this.request = request;
 		this.response = response;
 	}
-	private final OrderDao orderDao = new OrderDao();
+	private final OrderDAO orderDao = new OrderDAO();
     public void viewCheckout() {
     	cart = user.getCart(); 
     	String[] selectedCartItemIds = request.getParameter("cart_items").split(",");

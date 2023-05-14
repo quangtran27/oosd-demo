@@ -10,7 +10,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import java.util.Collections;
 import java.util.List;
 
-public class ProductDao {
+public class ProductDAO {
    private Transaction transaction = null;
 
    public void insert(Product product) {

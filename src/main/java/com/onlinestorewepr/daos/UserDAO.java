@@ -5,7 +5,7 @@ import com.onlinestorewepr.utils.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class UserDao {
+public class UserDAO {
    public void insert(User user) {
       Transaction transaction = null;
       try (Session session = HibernateUtil.getSessionFactory().openSession()) {

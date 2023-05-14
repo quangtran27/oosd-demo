@@ -1,7 +1,7 @@
 package com.onlinestorewepr.services;
 
-import com.onlinestorewepr.daos.CategoryDao;
-import com.onlinestorewepr.daos.ProductDao;
+import com.onlinestorewepr.daos.CategoryDAO;
+import com.onlinestorewepr.daos.ProductDAO;
 import com.onlinestorewepr.models.Category;
 import com.onlinestorewepr.models.Product;
 import com.onlinestorewepr.utils.Validator;
@@ -16,13 +16,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class ProductService {
     private final HttpServletRequest request;
     private final HttpServletResponse response;
-    private final ProductDao productDAO;
-    private final CategoryDao categoryDAO;
+    private final ProductDAO productDAO;
+    private final CategoryDAO categoryDAO;
     List<Product> products;
     List<Category> categories;
     String message = "";
@@ -31,8 +30,8 @@ public class ProductService {
     public ProductService(HttpServletRequest req, HttpServletResponse resp) {
         request = req;
         response = resp;
-        productDAO = new ProductDao();
-        categoryDAO = new CategoryDao();
+        productDAO = new ProductDAO();
+        categoryDAO = new CategoryDAO();
     }
 
     public void listProducts() throws ServletException, IOException {
@@ -152,7 +151,7 @@ public class ProductService {
     }
 
     public Product getProductDetailByProId(int proId) {
-        ProductDao productDao = new ProductDao();
+        ProductDAO productDao = new ProductDAO();
         Product product = new Product();
         product = productDao.get((proId));
         return product;

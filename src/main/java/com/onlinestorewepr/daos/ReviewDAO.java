@@ -2,7 +2,7 @@ package com.onlinestorewepr.daos;
 
 import com.onlinestorewepr.models.Review;
 
-public class ReviewDao {
+public class ReviewDAO {
     public Review getProductReviewByCustomer(int productId, int username) {
         return null;
     }

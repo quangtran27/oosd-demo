@@ -1,7 +1,7 @@
 package com.onlinestorewepr.services;
 
-import com.onlinestorewepr.daos.ProductDao;
-import com.onlinestorewepr.daos.ReviewDao;
+import com.onlinestorewepr.daos.ProductDAO;
+import com.onlinestorewepr.daos.ReviewDAO;
 import com.onlinestorewepr.models.Product;
 import com.onlinestorewepr.models.Review;
 import com.onlinestorewepr.utils.Validator;
@@ -9,8 +9,8 @@ import com.onlinestorewepr.utils.Validator;
 public class ReviewService {
     int productId = 1;
     int customerId = 1;
-    private final ProductDao productDao = new ProductDao();
-    private final ReviewDao reviewDao = new ReviewDao();
+    private final ProductDAO productDao = new ProductDAO();
+    private final ReviewDAO reviewDao = new ReviewDAO();
     public ReviewService() {}
     public void showWriteReview() {
         Product product = productDao.get(productId);
