@@ -14,4 +14,8 @@ public class CartItemDao {
     public void update(CartItem cartItem) {
         System.out.println("Update cart item");
     }
+    public void delete(CartItem cartItem) {
+        System.out.println("Delete cart item");
+    }
+
 }
