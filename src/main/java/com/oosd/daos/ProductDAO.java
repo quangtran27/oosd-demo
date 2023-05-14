@@ -50,4 +50,8 @@ public class ProductDAO {
       }
       return products;
    }
+
+   public List<Product> getListProByName(String productKeyword) {
+      return Collections.emptyList();
+   }
 }

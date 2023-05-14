@@ -125,7 +125,7 @@ public class ProductService {
     public List<Product> searchProduct(String productKeyword) {
         String message = "Invalid input";
         List<Product> proList = null;
-        proList = getListProByName(productKeyword);
+        proList = productDAO.getListProByName(productKeyword);
         return proList;
     }
 
